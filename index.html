@@ -1,26 +1,84 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<style>
-  .avatar-image {
-    width: 128px;
-    height: 128px;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <style>
+    html {
+    min-height: 100%;
+    }
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+    .thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
     object-fit: cover;
-    border-radius: 128px;
-  }
-  .thumbnail {
-  width: 48px;
-  height: 48px;
-  border-radius: 48px;
-  object-fit: cover;
-  }
-  body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+    }
+    .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: "Playwrite AU SA";
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+    }
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .main-container {
+    max-width: 640px;
+    margin: auto;
+    }
+    body {
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(210deg, #059bff, #73b3ff, #a8ccff, #d5e5ff, #ffffff);
+      color: rgba(193, 0, 100, 0.8);
+      font-family: "Helvetica";
+      }
+      a {
+      color: rgba(154, 12, 85, 0.8);
+      text-decoration: none;
+      }
+      .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      }
 </style>
 </head>
+
 <body>
+/*
+* {
+  border: 1px red dashed;
+  }
+*/
   <div class="main-container">
     <div class="image-row">
       <img class="avatar-image" src="/animalpic.jpeg" alt="Profile Photo">
@@ -32,11 +90,13 @@
 
     <div class="social-icons-row">
       <a href="https://www.instagram.com/liusabella/" target="_blank">
-        Instagram
+        <i class="fa-brands fa-instagram"></i> 
       </a>
-
+      <a href="https://www.facebook.com/liusabella/" target="_blank">
+        <i class="fa-brands fa-facebook"></i> 
+      </a>
       <a href="https://www.linkedin.com/in/liuisabella/" target="_blank">
-        LinkedIn
+        <i class="fa-brands fa-linkedin"></i> 
       </a>
     </div>
 
@@ -44,7 +104,7 @@
       <div class="item">
         <img class="thumbnail" src="/InstaIcon.png">
 
-        <a target="_blank" href="https://www.instagram.com/p/DELcZ4bMnW0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+        <a class="link-text" target="_blank" href="https://www.instagram.com/p/DELcZ4bMnW0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
           Funny Instagram Post
         </a>
       </div>
@@ -52,7 +112,7 @@
       <div class="item">
         <img class="thumbnail" src="/GoogleMapsIcon.png">
 
-        <a target="_blank" href="https://maps.app.goo.gl/uj77HSsab37QtuHN6">
+        <a class="link-text" target="_blank" href="https://maps.app.goo.gl/uj77HSsab37QtuHN6">
           Chicago Restaurants I Want To Try
         </a>
       </div>
